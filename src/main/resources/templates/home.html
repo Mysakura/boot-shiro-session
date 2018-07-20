@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link th:href="@{css/index.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <!--<h2>初级SpringBoot+Shiro小栗子 Node-One</h2>-->
+        <h2>初级SpringBoot+Shiro小栗子 Node-Two</h2>
+        <a href="/logout">退出登录</a>
+    </div>
+    <div class="main">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Show</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="u : ${users}">
+                <td>[[${u.username}]]</td>
+                <td>[[${u.password}]]</td>
+                <td>[[${u.show}]]</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

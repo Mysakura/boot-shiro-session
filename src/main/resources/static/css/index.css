@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.header{
+    padding: 1px;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #4E3384;
+    color: #c7acff;
+}
+.header h2{
+    text-align: center;
+}
+.header a{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    padding: 8px 15px;
+    background-color: #a27bf1;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100%;
+}
+
+.main{
+    width: 900px;
+    margin: 30px auto;
+}
+.main .left{
+    padding: 15px;
+    width: 414px;
+    float: left;
+    border: 1px solid #ddd;
+}
+.main .right{
+    padding: 15px;
+    width: 414px;
+    float: right;
+    border: 1px solid #ddd;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group > input{
+    width: 100%;
+    height: 28px;
+    text-indent: 8px;
+    border-radius: 3px;
+    border: 1px solid #ef5e85;
+    outline-color: #ef5e85;
+}
+.form-group > a{
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #EF5E85;
+    background-color: #EF5E85;
+    color: #fff;
+}
+.form-group > a:hover{
+    background-color: #dc5479;
+    border: 1px solid #dc5479;
+}
+
+.main .right .form-group > input{
+    border: 1px solid #8EBFA5;
+    outline-color: #8EBFA5;
+}
+.main .right .form-group > a{
+    border: 1px solid #8EBFA5;
+    background-color: #8EBFA5;
+}
+.main .right .form-group > a:hover{
+    border: 1px solid #71a98b;
+    background-color: #71a98b;
+}
+
+.tip-wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.tip-wrap .tip{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 8px 15px;
+    background-color: #D66CA5;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #4e3384;
+}
+
+/*Table*/
+.table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.table th{
+    color: #4e3384;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.table td{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    color: #d28c84;
+}
